@@ -1,0 +1,1353 @@
+Name: AlphaNumeric panels
+Type: FolderType
+Children:
+- Name: Letters
+  Id: g=dda8a4ffd5d90d341056391e4029824b
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 630.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 230.0
+  - Name: KeysRows
+    Type: ColumnLayout
+    Children:
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: VerticalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: KeysRow1
+      Type: RowLayout
+      Children:
+      - Name: q
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "q"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"q"}
+      - Name: w
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "w"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"w"}
+      - Name: e
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "e"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"e"}
+      - Name: r
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "r"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"r"}
+      - Name: t
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "t"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"t"}
+      - Name: y
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "y"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"y"}
+      - Name: u
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "u"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"u"}
+      - Name: i
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "i"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"i"}
+      - Name: o
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "o"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"o"}
+      - Name: p
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "p"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"p"}
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+    - Name: KeysRow2
+      Type: RowLayout
+      Children:
+      - Name: a
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "a"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"a"}
+      - Name: s
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "s"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"s"}
+      - Name: d
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "d"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"d"}
+      - Name: f
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "f"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"f"}
+      - Name: g
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "g"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"g"}
+      - Name: h
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "h"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"h"}
+      - Name: j
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "j"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"j"}
+      - Name: k
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "k"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"k"}
+      - Name: l
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "l"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"l"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+    - Name: KeysRow3
+      Type: RowLayout
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: z
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "z"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"z"}
+      - Name: x
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "x"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"x"}
+      - Name: c
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "c"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"c"}
+      - Name: v
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "v"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"v"}
+      - Name: b
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "b"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"b"}
+      - Name: n
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "n"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"n"}
+      - Name: m
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "m"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"m"}
+      - Name: Backspace
+        Type: BasicSymbolHorizontalButton
+        Children:
+        - Name: Symbol
+          Type: BaseDataVariableType
+          DataType: VirtualKeyboardKeySymbolEnum
+          ModellingRule: Optional
+          Value: 2
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/res/Backspace_Outline_24x.svg"
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+    - Name: KeysRow4
+      Type: RowLayout
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: Space
+        Type: BasicSpaceButton
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+      - Name: Enter
+        Type: BasicSymbolHorizontalButton
+        Children:
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/res/Enter_Outline_24x.svg"
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+- Name: NumbersAndSymbols1
+  Id: g=4498f5c34be10709305ba600435528be
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 630.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 230.0
+  - Name: KeysRows
+    Type: ColumnLayout
+    Children:
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: VerticalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: KeysRow1
+      Type: RowLayout
+      Children:
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: 1
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "1"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"1"}
+      - Name: 2
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "2"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"2"}
+      - Name: 3
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "3"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"3"}
+      - Name: 4
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "4"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"4"}
+      - Name: 5
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "5"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"5"}
+      - Name: 6
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "6"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"6"}
+      - Name: 7
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "7"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"7"}
+      - Name: 8
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "8"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"8"}
+      - Name: 9
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "9"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"9"}
+      - Name: 0
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "0"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"0"}
+    - Name: KeysRow2
+      Type: RowLayout
+      Children:
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: At
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "@"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"@"}
+      - Name: Hashtag
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "#"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"#"}
+      - Name: Percent
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "%"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"%"}
+      - Name: And
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "&"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"&"}
+      - Name: Asterisk
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "*"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"*"}
+      - Name: Underscore
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "_"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"_"}
+      - Name: hyphen
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "-"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"-"}
+      - Name: Plus
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "+"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"+"}
+      - Name: OpeningParenthesis
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "("
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"("}
+      - Name: ClosingParenthesis
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: ")"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":")"}
+    - Name: KeysRow3
+      Type: RowLayout
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: LessThan
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "<"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"<"}
+      - Name: GreaterThan
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: ">"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":">"}
+      - Name: Apostrophe
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "'"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"'"}
+      - Name: Colon
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: ":"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":":"}
+      - Name: Slash
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "/"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"/"}
+      - Name: ExclamationMark
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "!"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"!"}
+      - Name: QuestionMark
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "?"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"?"}
+      - Name: Backspace
+        Type: BasicSymbolHorizontalButton
+        Children:
+        - Name: Symbol
+          Type: BaseDataVariableType
+          DataType: VirtualKeyboardKeySymbolEnum
+          ModellingRule: Optional
+          Value: 2
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/res/Backspace_Outline_24x.svg"
+    - Name: KeysRow4
+      Type: RowLayout
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Space
+        Type: BasicSpaceButton
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+      - Name: Enter
+        Type: BasicSymbolHorizontalButton
+        Children:
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/res/Enter_Outline_24x.svg"
+- Name: NumbersAndSymbols2
+  Id: g=ddbd31cfb08dd769d736c33270b15341
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 630.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 230.0
+  - Name: KeysRows
+    Type: ColumnLayout
+    Children:
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: VerticalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: KeysRow1
+      Type: RowLayout
+      Children:
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Tilde
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "~"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"~"}
+      - Name: Accent
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "`"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"`"}
+      - Name: Pipe
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "|"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"|"}
+      - Name: MiddleDot
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "·"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"·"}
+      - Name: SquareRoot
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "√"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"√"}
+      - Name: Division
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "÷"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"÷"}
+      - Name: Multiplication
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "×"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"×"}
+      - Name: OneHalf
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "½"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"½"}
+      - Name: OpeningCurlyBrace
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "{"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{"}
+      - Name: ClosingCurlyBrace
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "}"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"}"}
+    - Name: KeysRow2
+      Type: RowLayout
+      Children:
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Dollar
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "$"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"$"}
+      - Name: Euro
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "€"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"€"}
+      - Name: Pound
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "£"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"£"}
+      - Name: Cent
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "¢"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"¢"}
+      - Name: Yen
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "¥"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"¥"}
+      - Name: Caret
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "^"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"^"}
+      - Name: Equal
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "="
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"="}
+      - Name: Backslash
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "\\"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"\\"}
+      - Name: OpeningSquareBracket
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "["
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"["}
+      - Name: ClosingSquareBracket
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "]"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"]"}
+    - Name: KeysRow3
+      Type: RowLayout
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Trademark
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "™"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"™"}
+      - Name: LeftAngleQuote
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "«"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"«"}
+      - Name: RightAngleQuote
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "»"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"»"}
+      - Name: LeftDoubleQuote
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "“"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"“"}
+      - Name: RightDoubleQuote
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "”"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"”"}
+      - Name: Ellipsis
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "…"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"…"}
+      - Name: Comma
+        Type: BasicTextButton
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: ","
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":","}
+      - Name: Backspace
+        Type: BasicSymbolHorizontalButton
+        Children:
+        - Name: Symbol
+          Type: BaseDataVariableType
+          DataType: VirtualKeyboardKeySymbolEnum
+          ModellingRule: Optional
+          Value: 2
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/res/Backspace_Outline_24x.svg"
+    - Name: KeysRow4
+      Type: RowLayout
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 90.0
+      - Name: HorizontalGap
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Space
+        Type: BasicSpaceButton
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+      - Name: Enter
+        Type: BasicSymbolHorizontalButton
+        Children:
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/res/Enter_Outline_24x.svg"

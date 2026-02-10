@@ -1,0 +1,2292 @@
+Name: Basic Keyboards
+Type: FolderType
+Children:
+- Name: AlphaNumeric
+  Id: g=564dbd25f6cd04dee15fac856be51ca8
+  Supertype: VirtualKeyboardPanel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Control
+    Type: Alias
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: PreeditText
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: ShiftActive
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 630.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 230.0
+  - Name: Locales
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: Background
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#d3d3d3"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#f4f4f4"
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: KeyboardLoader
+    Type: PanelLoader
+    Children:
+    - Name: Panel
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: CurrentPanel
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+    - Class: Reference
+      Target: ns=3;i=478
+      Direction: Forward
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: SymbolsPage2
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"1/2"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols2"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: SymbolsPage1
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols2@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"2/2"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: Shift
+    Type: BasicSymbolHorizontalButton
+    Children:
+    - Name: Symbol
+      Type: BaseDataVariableType
+      DataType: VirtualKeyboardKeySymbolEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ImagePath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=7;%PROJECTDIR%/res/Shift_Outline_24x.svg"
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Default"
+      Children:
+      - Name: KeyValueConverter1
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../ShiftActive"
+        - Name: ns=2;Pairs
+          Type: BaseObjectType
+          Children:
+          - Name: Pair
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: Boolean
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Default"
+          - Name: Pair1
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Accent"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters@BrowseName"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+  - Name: Letters
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}|{0}=={2}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1@BrowseName"
+        - Name: ns=2;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols2@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"ABC"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: Symbols
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"&123"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: KeyboardType
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardTypeEnum
+    ModellingRule: Optional
+  - Name: EURange
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/RangeType"
+  - Name: EngineeringUnit
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/EUInformationType"
+  - Name: TargetVariable
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+- Name: AlphaNumeric_Preedit
+  Id: g=17d339c3c9676ff620a6d6055f67fb96
+  Supertype: VirtualKeyboardPanel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Control
+    Type: Alias
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: PreeditText
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: ShiftActive
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 630.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 280.0
+  - Name: Locales
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: Background
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#d3d3d3"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#f4f4f4"
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: KeyboardLoader_Preedit
+    Type: PanelLoader
+    Children:
+    - Name: Panel
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: CurrentPanel
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+    - Class: Reference
+      Target: ns=3;i=478
+      Direction: Forward
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: PreeditTextInput
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: ReadOnly
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: PreeditControl
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../PreeditTextInput@NodeId"
+  - Name: KeyboardType
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardTypeEnum
+    ModellingRule: Optional
+    Value: 2
+  - Name: KeyboardTypeName
+    Type: BaseDataVariableType
+    DataType: String
+    ModellingRule: Optional
+    Value: "AlphaNumeric_Preedit"
+  - Name: SymbolsPage2
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader_Preedit}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"1/2"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader_Preedit}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols2"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: SymbolsPage1
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader_Preedit}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols2@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"2/2"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader_Preedit}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: Shift
+    Type: BasicSymbolHorizontalButton
+    Children:
+    - Name: Symbol
+      Type: BaseDataVariableType
+      DataType: VirtualKeyboardKeySymbolEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ImagePath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=7;%PROJECTDIR%/res/Shift_Outline_24x.svg"
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Default"
+      Children:
+      - Name: KeyValueConverter1
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../ShiftActive"
+        - Name: ns=2;Pairs
+          Type: BaseObjectType
+          Children:
+          - Name: Pair
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: Boolean
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Default"
+          - Name: Pair1
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Accent"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader_Preedit}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters@BrowseName"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+  - Name: Letters
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}|{0}=={2}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader_Preedit}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1@BrowseName"
+        - Name: ns=2;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols2@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"ABC"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 220.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader_Preedit}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: Symbols
+    Type: BasicSwitchPushButton
+    Children:
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}=={1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{KeyboardLoader_Preedit}/CurrentPanel@BrowseName"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/Letters@BrowseName"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"&123"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 220.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{KeyboardLoader_Preedit}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/TechForumPadova202602/UI/Keyboards/Basic Keyboards/AlphaNumeric panels/NumbersAndSymbols1"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: EURange
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/RangeType"
+  - Name: EngineeringUnit
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/EUInformationType"
+  - Name: TargetVariable
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+- Name: Numeric
+  Id: g=328264b1f5f9455ddada6af3a4dad8c6
+  Supertype: VirtualKeyboardPanel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Control
+    Type: Alias
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: PreeditText
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: ShiftActive
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 270.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 230.0
+  - Name: Locales
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ModellingRule: Optional
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: Background
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#d3d3d3"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#f4f4f4"
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: KeyboardType
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardTypeEnum
+    ModellingRule: Optional
+    Value: 1
+  - Name: Key Layout
+    Type: GridLayout
+    Children:
+    - Name: Rows
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: ["40","40","40","40"]
+    - Name: Columns
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: ["50","50","50","50"]
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: 7
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "7"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"7"}
+    - Name: 8
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "8"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"8"}
+    - Name: 9
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "9"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"9"}
+    - Name: Backspace
+      Type: BasicSymbolVerticalButton
+      Children:
+      - Name: Symbol
+        Type: BaseDataVariableType
+        DataType: VirtualKeyboardKeySymbolEnum
+        ModellingRule: Optional
+        Value: 2
+      - Name: ImagePath
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        ModellingRule: Optional
+        Value: "ns=7;%PROJECTDIR%/res/Backspace_Outline_24x.svg"
+      - Name: ns=3;GridLayoutProperties
+        Type: GridLayoutProperties
+        DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+        Children:
+        - Name: RowSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 2
+    - Name: 4
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "4"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"4"}
+    - Name: 5
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "5"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"5"}
+    - Name: 6
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "6"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"6"}
+    - Name: 1
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "1"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"1"}
+    - Name: 2
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "2"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"2"}
+    - Name: 3
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "3"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"3"}
+    - Name: Enter
+      Type: BasicSymbolVerticalButton
+      Children:
+      - Name: ImagePath
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        ModellingRule: Optional
+        Value: "ns=7;%PROJECTDIR%/res/Enter_Outline_24x.svg"
+      - Name: ns=3;GridLayoutProperties
+        Type: GridLayoutProperties
+        DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+        Children:
+        - Name: RowSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 2
+    - Name: 0
+      Type: BasicTextButton
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "0"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"0"}
+      - Name: ns=3;GridLayoutProperties
+        Type: GridLayoutProperties
+        DisplayName: {"NamespaceIndex":3,"TextId":"GridLayoutPropertiesDisplayName"}
+        Children:
+        - Name: ColumnSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 2
+    - Name: Dot
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "."
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"."}
+    - Name: VerticalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: HorizontalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: EURange
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/RangeType"
+  - Name: EngineeringUnit
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/EUInformationType"
+  - Name: TargetVariable
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+- Name: Numeric_Preedit
+  Id: g=7e77ede6bdba65b1c27b38b4f0bf7543
+  Supertype: VirtualKeyboardPanel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Control
+    Type: Alias
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: PreeditText
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    AccessLevel: Read
+  - Name: ShiftActive
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 270.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 280.0
+  - Name: Locales
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ModellingRule: Optional
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: Background
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#d3d3d3"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#f4f4f4"
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: PreeditTextInput
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: ShowButtons
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+  - Name: Key Layout
+    Type: GridLayout
+    Children:
+    - Name: Rows
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: ["40","40","40","40"]
+    - Name: Columns
+      Type: BaseDataVariableType
+      DataType: String
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: ["50","50","50","50"]
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: 7
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "7"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"7"}
+    - Name: 8
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "8"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"8"}
+    - Name: 9
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "9"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"9"}
+    - Name: Backspace
+      Type: BasicSymbolVerticalButton
+      Children:
+      - Name: Symbol
+        Type: BaseDataVariableType
+        DataType: VirtualKeyboardKeySymbolEnum
+        ModellingRule: Optional
+        Value: 2
+      - Name: ImagePath
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        ModellingRule: Optional
+        Value: "ns=7;%PROJECTDIR%/res/Backspace_Outline_24x.svg"
+      - Name: ns=3;GridLayoutProperties
+        Type: GridLayoutProperties
+        Children:
+        - Name: RowSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 2
+    - Name: 4
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "4"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"4"}
+    - Name: 5
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "5"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"5"}
+    - Name: 6
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "6"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"6"}
+    - Name: 1
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "1"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"1"}
+    - Name: 2
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "2"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"2"}
+    - Name: 3
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "3"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"3"}
+    - Name: Enter
+      Type: BasicSymbolVerticalButton
+      Children:
+      - Name: ImagePath
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        ModellingRule: Optional
+        Value: "ns=7;%PROJECTDIR%/res/Enter_Outline_24x.svg"
+      - Name: ns=3;GridLayoutProperties
+        Type: GridLayoutProperties
+        Children:
+        - Name: RowSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 2
+    - Name: 0
+      Type: BasicTextButton
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "0"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"0"}
+      - Name: ns=3;GridLayoutProperties
+        Type: GridLayoutProperties
+        Children:
+        - Name: ColumnSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 2
+    - Name: Dot
+      Type: BasicTextButton
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "."
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"."}
+    - Name: VerticalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: HorizontalGap
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+  - Name: KeyboardType
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardTypeEnum
+    ModellingRule: Optional
+    Value: 2
+  - Name: PreeditControl
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../PreeditTextInput@NodeId"
+  - Name: KeyboardTypeName
+    Type: BaseDataVariableType
+    DataType: String
+    ModellingRule: Optional
+    Value: "Numeric_Preedit"
+  - Name: EURange
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/RangeType"
+  - Name: EngineeringUnit
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/PropertyType/EUInformationType"
+  - Name: TargetVariable
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+- File: AlphaNumeric_panels/AlphaNumeric_panels.yaml
+- File: Basic_keys/Basic_keys.yaml
+- Name: ns=4;LibraryReference
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 4
+    },
+    "Body": {
+     "libraryGuid": "f331a7e12232f085e6e83b5aa81746cb",
+     "objectGuid": "680ca9fa8b0b7f55dd549caf92ba7f87",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }

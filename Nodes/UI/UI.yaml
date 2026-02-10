@@ -194,6 +194,7 @@ Children:
   - Name: VirtualKeyboard
     Type: BaseDataVariableType
     DataType: VirtualKeyboardEngineTypeEnum
+    Value: 1
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
@@ -413,6 +414,51 @@ Children:
                 Type: NodePointer
                 DataType: NodeId
                 Value: "/Objects/TechForumPadova202602/UI/Screens/EventiMetodi"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Panel6
+              Type: NavigationPanelItem
+              Children:
+              - Name: Title
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Panel
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/TechForumPadova202602/UI/Screens/Widgets"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Panel7
+              Type: NavigationPanelItem
+              Children:
+              - Name: Title
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Panel
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/TechForumPadova202602/UI/Screens/Widgets1"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Panel8
+              Type: NavigationPanelItem
+              Children:
+              - Name: Title
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Panel
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/TechForumPadova202602/UI/Screens/AlarmsPage"
                 Children:
                 - Name: Kind
                   Type: PropertyType
@@ -1090,3 +1136,4 @@ Children:
     DataType: String
     ReferenceType: HasProperty
     AccessLevel: Read
+- File: Widgets/Widgets.yaml

@@ -67,11 +67,13 @@ Children:
     DataType: Int32
     Value: 30
 - Name: Motor1
+  Id: g=82ebc06b31be1963c65fae649874a84d
   Type: Motor
   Children:
   - Name: Speed
     Type: BaseDataVariableType
     DataType: Int32
+    Value: 10
     Children:
     - Name: EngineeringUnits
       Type: EUInformationType
@@ -93,8 +95,85 @@ Children:
   - Name: Temperature
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 30
+    Value: 10
 - Name: Temperature4
   Type: BaseDataVariableType
   DataType: Float
 - File: EventiMetodi/EventiMetodi.yaml
+- Name: Motor2
+  Id: g=5863b81b311cf2fb6a7175511a654e93
+  Type: Motor
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 4731961
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+  - Name: Started
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+- Name: Motor3
+  Id: g=e290daef58769e2e119434133050d4db
+  Type: Motor
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 44
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 4731961
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+  - Name: Started
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 34
+- Name: Ingredient01
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ingredient01"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: BitAlarm
+  Type: BaseDataVariableType
+  DataType: Boolean

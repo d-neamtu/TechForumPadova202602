@@ -1,3 +1,298 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: ExclusiveLevelAlarm1
+  Id: g=b7ea07f496af4601aebce7e312ea06dc
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=afa8a76e2ec4de59403f8212db7a755a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e77c0fb4b6474bfe9684b7b254d6e478
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TechForumPadova202602/Model/Temperature"
+  - Name: LastEvent
+    Id: g=f4f45bae8d8875cec306eeb4c7bb46ed
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=e4edade678280714500b755bfa8e3757
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighHighStateMessage
+      Id: g=4b655dd3630a94499d27225ebef08ca8
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"HH"}
+    - Name: HighStateMessage
+      Id: g=2d8a3bdef3891e503facf8b4478122e8
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"H"}
+    - Name: LowStateMessage
+      Id: g=08080f24d9c2d4ff303c51d5b08ab55b
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"L"}
+    - Name: LowLowStateMessage
+      Id: g=1a9004c4a10fdea1753067604fa6dcba
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"LL"}
+  - Name: HighHighLimit
+    Id: g=a716eb731ef3791691203bb07f43253f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 90.0
+  - Name: HighLimit
+    Id: g=9adc9e321d9986bcb0f0197644519322
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 70.0
+  - Name: LowLowLimit
+    Id: g=5703faf53ff02bdbab4335784296b392
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: LowLimit
+    Id: g=1fdc6fb7d40d93248c7486237d46c17f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 30.0
+  - Name: MaxTimeShelved
+    Id: g=14d578c70330956444d8bb8c7ed5face
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=e485a66532343edf8d780804112c348d
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=4a19eb930e233f8173b824822d04e48f
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: ExclusiveLevelAlarm2
+  Id: g=07e0fbee6c5a492580b62896444396d5
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=86d3c19c1137905d8912c8d7bafd1637
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=7ef51a1039be4f699b17fb43d63826e4
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TechForumPadova202602/Model/Temperature"
+  - Name: LastEvent
+    Id: g=fba431486c6a6904e64cb43cc99d3adb
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=9616487f59c74fa3b29350496ed710dc
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighHighStateMessage
+      Id: g=ab1d665950d5dac0ff8abb51cacb06bf
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"HH"}
+    - Name: HighStateMessage
+      Id: g=7108f059d65856a96cecccbbf39f46d2
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"H"}
+    - Name: LowStateMessage
+      Id: g=02d61f6019b289500829d96ce9ae1d65
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"L"}
+    - Name: LowLowStateMessage
+      Id: g=a9bb34fdb36baf978bd80cd699b02c1d
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"LL"}
+  - Name: HighHighLimit
+    Id: g=471c426fef06507dc492dac8da6f745f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 90.0
+  - Name: HighLimit
+    Id: g=417a8b2d13d0f370fa6fef0a423414ba
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 70.0
+  - Name: LowLowLimit
+    Id: g=f57171e978b050476f768c4fba92b3ee
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: LowLimit
+    Id: g=57e1660f290126a271eeefff5b31c100
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 30.0
+  - Name: MaxTimeShelved
+    Id: g=957c08dfab0954d7643e5bb28ceb8b14
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=4a5701bf5bde9a90b4971b7b46c126a9
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=c949804f7bdd8b6638442302310f6e98
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: DigitalAlarm1
+  Id: g=c49db15e802547d0a75efff7a0dc0de5
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=87593e22af70bbd6a0de22221721df55
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=72d217483bb599c04738ea4fc2726710
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=8b3df3626dfe4a1d9b818a733f9c9636
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/TechForumPadova202602/Model/BitAlarm"
+  - Name: LastEvent
+    Id: g=3a97388c81b897b9530682427da8e42f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=21;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=82711e3aba5d12300517268368116e52
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Digital Alarm Active"}
+  - Name: MaxTimeShelved
+    Id: g=9f3e2a51615d31610f4858272d8983d9
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: PresetTimeShelved
+    Id: g=cee4f6338a83604f609a2fa45faf6aa9
+    Type: BaseDataVariableType
+    DataType: Duration
+  - Name: LatchingEnabled
+    Id: g=e73bc4ff99f6464f26aa3374cab6a401
+    Type: BaseDataVariableType
+    DataType: Boolean

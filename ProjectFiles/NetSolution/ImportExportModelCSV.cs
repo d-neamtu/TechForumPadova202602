@@ -15,6 +15,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UAManagedCore;
 using UAManagedCore.Logging;
+using FTOptix.Alarm;
 using OpcUa = UAManagedCore.OpcUa;
 
 #endregion
