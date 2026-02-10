@@ -9,8 +9,9 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [2,2],
     "Body": [
-     "","en-US"
+     "","en-US",
+     "ImportExportModelVariablesStartingNodeDescription","Node containing variables for csv generation with full name and path to be used to import into models"
     ]
    }

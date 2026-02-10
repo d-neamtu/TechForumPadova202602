@@ -1,2 +1,58 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
+Children:
+- Name: ImportExportModelCSV
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVFilePath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/variables.csv"
+  - Name: ModelNodeToExport
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/Model"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: VariablesNodeToBuildCSV
+    Type: NodePointer
+    DataType: NodeId
+    Description: {"NamespaceIndex":7,"TextId":"ImportExportModelVariablesStartingNodeDescription"}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Class: Method
+    Name: BuildVariablesCSVFile
+  - Class: Method
+    Name: ExportModel
+  - Class: Method
+    Name: ImportModel
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "c6d188f2628314975bdfb95cd0b311e2",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

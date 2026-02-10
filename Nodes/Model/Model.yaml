@@ -1,4 +1,5 @@
 Name: Model
+Id: g=f4ebf5b11895efeba46f5579d2bdea4c
 Type: ModelCategoryFolder
 Children:
 - Name: LaMiaVariabile
@@ -93,3 +94,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 30
+- Name: Temperature4
+  Type: BaseDataVariableType
+  DataType: Float
