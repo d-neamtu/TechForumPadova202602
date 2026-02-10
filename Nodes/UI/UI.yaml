@@ -388,6 +388,36 @@ Children:
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Panel4
+              Type: NavigationPanelItem
+              Children:
+              - Name: Title
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Panel
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/TechForumPadova202602/UI/Screens/Converters"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Panel5
+              Type: NavigationPanelItem
+              Children:
+              - Name: Title
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Panel
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/TechForumPadova202602/UI/Screens/EventiMetodi"
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
           - Name: CurrentPanel
             Type: NodePointer
             DataType: NodeId
@@ -600,6 +630,15 @@ Children:
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["*.png","*.jpg","*.jpeg","*.gif","*.bmp","*.svg","*.avi","*.mov","*.mkv","*.mpg","*.mp4","*.wmv","*.pdf","*.ttf","*.otf","*.html","*.css","*.js","*.mjs"]
+  - Name: Session
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/UI/UISession1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"
 - Name: FriendlyDark1
   Id: g=a6849787569dc1b2185d9699501e8570
   Type: StyleSheet
@@ -959,3 +998,95 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: UISession1
+  Id: g=16963894b3ee86155d417ea073dd5b61
+  Supertype: UISession
+  Children:
+  - Name: IsInteractive
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+    Value: true
+  - Name: IsNative
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IsWeb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: IpAddress
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: ScaleFactor
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: User
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: ActualLocaleId
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+  - Name: ActualLanguage
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+  - Name: ActualMeasurementSystem
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+  - Name: TimeZoneOffset
+    Type: BaseVariableType
+    DataType: TimeZoneDataType
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: Groups
+    Type: BaseObjectType
+  - Name: Roles
+    Type: BaseObjectType
+  - Name: Rights
+    Type: BaseObjectType
+  - Class: Reference
+    Target: ns=1;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=266
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=269
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=303
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=324
+    Direction: Forward
+  - Class: Reference
+    Target: ns=1;i=272
+    Direction: Forward
+  - Name: LoggedIn
+    Type: BaseVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: BearerAccessToken
+    Type: BaseVariableType
+    DataType: String
+    ReferenceType: HasProperty
+    AccessLevel: Read

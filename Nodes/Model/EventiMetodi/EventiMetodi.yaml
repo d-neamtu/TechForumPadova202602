@@ -1,0 +1,223 @@
+Name: EventiMetodi
+Type: FolderType
+Children:
+- Name: settag
+  Id: g=e2eec509f35326c5460a469a19a9468f
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: settagRangeTransitioned
+  Type: VariableRangeTransitionEventDispatcher
+  Children:
+  - Name: From
+    Type: BaseVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: To
+    Type: BaseVariableType
+    DataType: Double
+    Value: 20.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableRangeTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../settag"
+  - Name: VariableRangeTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableRangeTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/TechForumPadova202602/Model/EventiMetodi/bitonoff"
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+            Value: true
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: VariableRangeTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+- Name: bitonoff
+  Id: g=b0a669316917fff8b162527f758e1de7
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: settagRangeTransitioned1
+  Type: VariableRangeTransitionEventDispatcher
+  Children:
+  - Name: From
+    Type: BaseVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: To
+    Type: BaseVariableType
+    DataType: Double
+    Value: 20.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableRangeTransition
+    Value: 1
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../settag"
+  - Name: VariableRangeTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableRangeTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/TechForumPadova202602/Model/EventiMetodi/bitonoff"
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: VariableRangeTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16

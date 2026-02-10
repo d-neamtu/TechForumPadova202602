@@ -97,3 +97,4 @@ Children:
 - Name: Temperature4
   Type: BaseDataVariableType
   DataType: Float
+- File: EventiMetodi/EventiMetodi.yaml
