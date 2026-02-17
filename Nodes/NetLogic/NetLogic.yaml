@@ -206,7 +206,6 @@ Children:
       }
      }
 - Name: ImportAndExportRecipes
-  Id: g=e2a2c1b5f235ac7553b36c42c6c06b9e
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
@@ -228,7 +227,7 @@ Children:
   - Name: RecipeSchema
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/TechForumPadova202602/Recipes/RecipeSchema1"
+    Value: {"IdType":2,"Id":"bbd1014d8038033f87653a226c5a516f","Namespace":7}
     Children:
     - Name: Kind
       Type: PropertyType
