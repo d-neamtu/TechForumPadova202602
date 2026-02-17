@@ -2,7 +2,6 @@ Name: Recipes
 Type: RecipesCategoryFolder
 Children:
 - Name: LegacyRecipeSchema1
-  Id: g=f116b5974838e1d6d1efe72a7fbd068b
   Type: ns=31;RecipeSchema
   Children:
   - Name: Root

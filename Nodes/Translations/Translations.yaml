@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [78,2],
+    "Dimensions": [82,2],
     "Body": [
      "","en-US",
      "ImportExportModelVariablesStartingNodeDescription","Node containing variables for csv generation with full name and path to be used to import into models",
@@ -88,6 +88,10 @@ Children:
      "Your password has expired. Please enter a new one.","Your password has expired. Please enter a new one.",
      "ChangeUserFormOutputSuccessMessage","Change User successful",
      "ChangeUserFormOutputErrorMessage","Authentication failed",
-     "ChangeUserFormOutputPasswordExpired","Password expired"
+     "ChangeUserFormOutputPasswordExpired","Password expired",
+     "ApplicationFolder","Application folder",
+     "ProjectFolder","Project folder",
+     "Filename","File name",
+     "Size","Size"
     ]
    }
