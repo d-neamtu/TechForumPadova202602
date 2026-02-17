@@ -205,3 +205,48 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: ImportAndExportRecipes
+  Id: g=e2a2c1b5f235ac7553b36c42c6c06b9e
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: ExportRecipes
+  - Name: CsvPath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/ricette.csv"
+  - Name: CsvSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Method
+    Name: ImportRecipes
+  - Name: RecipeSchema
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/Recipes/RecipeSchema1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":33}
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "fea5dfb517c76996ab7f46461d82f3b8",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

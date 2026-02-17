@@ -18,6 +18,8 @@ using FTOptix.DataLogger;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
 using FTOptix.ODBCStore;
+using FTOptix.Recipe;
+using FTOptix.RecipeX;
 using OpcUa = UAManagedCore.OpcUa;
 
 #endregion

@@ -122,16 +122,32 @@ Project:
    Uri: 'urn:FTOptix:SQLiteStore:Net'
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
+  31:
+   Uri: 'urn:FTOptix:Recipe'
+   Module: FTOptix.Recipe
+   Version: 1.0
+  32:
+   Uri: 'urn:FTOptix:Recipe:Net'
+   Module: FTOptix.Recipe.Net
+   Version: 1.0
+  33:
+   Uri: 'urn:FTOptix:RecipeX'
+   Module: FTOptix.RecipeX
+   Version: 1.1
+  34:
+   Uri: 'urn:FTOptix:RecipeX:Net'
+   Module: FTOptix.RecipeX.Net
+   Version: 1.1
  Statistics:
-  TotalNodeCount: 3032
-  Objects: 691
-  ObjectTypes: 31
-  Variables: 2302
+  TotalNodeCount: 7400
+  Objects: 1550
+  ObjectTypes: 68
+  Variables: 5747
   VariableTypes: 0
   DataTypes: 0
-  Methods: 8
-  References: 94
+  Methods: 35
+  References: 187
   ReferenceTypes: 0
-  Files: 35
+  Files: 47
  Nodes:
  - File: Nodes/TechForumPadova202602.yaml

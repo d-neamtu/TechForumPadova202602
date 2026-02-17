@@ -1,2 +1,175 @@
 Name: Recipes
 Type: RecipesCategoryFolder
+Children:
+- Name: LegacyRecipeSchema1
+  Id: g=f116b5974838e1d6d1efe72a7fbd068b
+  Type: ns=31;RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Ingrediente1
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Ingrediente2
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Ingrediente3
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Ingrediente4
+      Type: BaseDataVariableType
+      DataType: Boolean
+  - Class: Reference
+    Target: ns=31;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=60
+    Direction: Forward
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/Model/Ricette"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: EditModel
+    Id: g=fa6cda54f6b8b4d1f5e07b19ad61abf0
+    Type: BaseObjectType
+    Children:
+    - Name: Ingrediente1
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Ingrediente2
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Ingrediente3
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Ingrediente4
+      Type: BaseDataVariableType
+      DataType: Boolean
+- Name: RecipeSchema1
+  Id: g=bbd1014d8038033f87653a226c5a516f
+  Type: ns=33;RecipeSchema
+  Children:
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/Model/Ricette"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: RecipeSchemaStatus
+    AccessLevel: Read
+  - Name: Metadata
+    Type: BaseObjectType
+  - Class: Reference
+    Target: ns=33;i=16
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=18
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=20
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=23
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=26
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=28
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=36
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=73
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=79
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=91
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=59
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=61
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=63
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=65
+    Direction: Forward
+  - Class: Reference
+    Target: ns=33;i=175
+    Direction: Forward

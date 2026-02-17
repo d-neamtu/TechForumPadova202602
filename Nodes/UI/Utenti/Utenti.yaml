@@ -1,0 +1,6 @@
+Name: Utenti
+Type: FolderType
+Children:
+- File: LoginForm/LoginForm.yaml
+- File: UserEditor/UserEditor.yaml
+- File: ChangeUserForm/ChangeUserForm.yaml

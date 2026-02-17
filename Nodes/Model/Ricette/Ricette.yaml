@@ -1,0 +1,20 @@
+Name: Ricette
+Id: g=9d20193f9c26bd39a8fcdf3c6417265c
+Type: FolderType
+Children:
+- Name: Ingrediente1
+  Id: g=68bcbf6029b2dec33b1c8f715aaba82b
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Ingrediente2
+  Id: g=fb9d23d1eac3b574164b921274388101
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Ingrediente3
+  Id: g=274cf5a54119d106ed7dc5728bf360e3
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Ingrediente4
+  Id: g=43ce044d5e8fab03e34d5de91ffccc59
+  Type: BaseDataVariableType
+  DataType: Boolean

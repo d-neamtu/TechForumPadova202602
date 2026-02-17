@@ -954,6 +954,41 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#00640096"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/User@BrowseName"
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#000000"
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 924.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 22.0
       - Name: NavigationPanel1
         Type: NavigationPanel
         Children:
@@ -1120,6 +1155,51 @@ Children:
               Type: NodePointer
               DataType: NodeId
               Value: "/Objects/TechForumPadova202602/UI/Screens/SparkLines"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Panel12
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/TechForumPadova202602/UI/Screens/Ricette"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Panel13
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/TechForumPadova202602/UI/Screens/GestioneUtenti"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Panel14
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/TechForumPadova202602/UI/Screens/NuoveRicette"
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -1644,3 +1724,5 @@ Children:
     ReferenceType: HasProperty
     AccessLevel: Read
 - File: Widgets/Widgets.yaml
+- File: Utenti/Utenti.yaml
+- File: RecipesEditor/RecipesEditor.yaml

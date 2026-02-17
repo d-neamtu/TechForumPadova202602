@@ -28,6 +28,9 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
 - Name: PasswordPolicy
   Type: PasswordPolicy
   Children:
@@ -65,3 +68,12 @@ Children:
 - File: Retentivity/Retentivity.yaml
 - Name: RuntimeOptimization
   Type: PropertyGroup
+- Name: LegacyRecipeSchema1
+  Type: Alias
+  DataType: NodeId
+  Value: "/Objects/TechForumPadova202602/Recipes/LegacyRecipeSchema1/EditModel"
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: "/Objects/TechForumPadova202602/Recipes/LegacyRecipeSchema1/EditModel"

@@ -58,3 +58,4 @@ Children:
   DataType: Boolean
 - File: Motors/Motors.yaml
 - File: LoggingData/LoggingData.yaml
+- File: Ricette/Ricette.yaml
