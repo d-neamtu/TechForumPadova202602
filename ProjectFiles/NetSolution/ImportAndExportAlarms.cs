@@ -14,6 +14,10 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using UAManagedCore;
+using FTOptix.DataLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
+using FTOptix.ODBCStore;
 using OpcUa = UAManagedCore.OpcUa;
 
 #endregion

@@ -137,4 +137,4 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: "/Objects/TechForumPadova202602/Model/Motor"
+      Value: "/Objects/TechForumPadova202602/Model/Motors/Motor"

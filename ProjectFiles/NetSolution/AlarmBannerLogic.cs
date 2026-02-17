@@ -4,6 +4,10 @@ using System.Linq;
 using UAManagedCore;
 using FTOptix.Core;
 using FTOptix.NetLogic;
+using FTOptix.DataLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
+using FTOptix.ODBCStore;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

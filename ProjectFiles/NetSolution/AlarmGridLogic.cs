@@ -2,6 +2,10 @@
 using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
+using FTOptix.DataLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
+using FTOptix.ODBCStore;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

@@ -198,7 +198,7 @@ Children:
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/TechForumPadova202602/UI/MainWindow1"
+    Value: "/Objects/TechForumPadova202602/UI/MainWindow"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -1075,6 +1075,51 @@ Children:
               Type: NodePointer
               DataType: NodeId
               Value: "/Objects/TechForumPadova202602/UI/Screens/AlarmsPage"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Panel9
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/TechForumPadova202602/UI/Screens/Datalogger"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Panel10
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/TechForumPadova202602/UI/Screens/TrendStorico"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Panel11
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/TechForumPadova202602/UI/Screens/SparkLines"
               Children:
               - Name: Kind
                 Type: PropertyType
