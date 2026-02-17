@@ -10,6 +10,7 @@ using FTOptix.CoreBase;
 using FTOptix.Core;
 using FTOptix.Retentivity;
 using FTOptix.RecipeX;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class ChangeUserChangePasswordFormOutputMessageLogic : BaseNetLogic

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Diagnostics;
 using FilesystemBrowserHelper;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class FilesystemBrowserLogic : BaseNetLogic

@@ -1,45 +1,56 @@
 Name: LoggingData
+Id: g=bbc86d780445668977fd92c1cc72f962
 Type: FolderType
 Children:
 - Name: LogData1
+  Id: g=783cbb5bc8bb18deb6927ce42d41d51e
   Type: BaseDataVariableType
   DataType: Int32
   Children:
   - Name: DynamicLink
+    Id: g=7a2e5187cacd1b7faefad3b0eb2fab61
     Type: DynamicLink
     DataType: NodePath
     Value: "../../../NetLogic/VariablesSimulator/Sine"
     Children:
     - Name: Mode
+      Id: g=17cbb8ae8b81bdacd163ef38a1ca3596
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
 - Name: LogData2
+  Id: g=ea56c60b0c922a28549d0a22d74726c1
   Type: BaseDataVariableType
   DataType: Int32
   Children:
   - Name: DynamicLink
+    Id: g=f3ad63b37747f220fa570c78b536409e
     Type: DynamicLink
     DataType: NodePath
     Value: "../../../NetLogic/VariablesSimulator/Cosine"
     Children:
     - Name: Mode
+      Id: g=31c004ee416ef93f429c14a30baf0f48
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
 - Name: LogData3
+  Id: g=c66021babe4526f471c229c7993349b1
   Type: BaseDataVariableType
   DataType: Int32
   Children:
   - Name: DynamicLink
+    Id: g=3e732fe6277974765483a4626e8d34a6
     Type: DynamicLink
     DataType: NodePath
     Value: "../../../NetLogic/VariablesSimulator/Ramp"
     Children:
     - Name: Mode
+      Id: g=145505392fe8b06170fd067efc3c653d
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
 - Name: LogData4
+  Id: g=a19871f3f033e515c404282bd342e887
   Type: BaseDataVariableType
   DataType: Int32

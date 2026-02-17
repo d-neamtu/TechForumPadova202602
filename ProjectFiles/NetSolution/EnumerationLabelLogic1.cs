@@ -14,6 +14,7 @@ using System.Linq;
 using FTOptix.WebUI;
 using FTOptix.SQLiteStore;
 using FTOptix.Recipe;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class EnumerationLabelLogic : BaseNetLogic

@@ -9,6 +9,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using FilesystemBrowserHelper;
+using FTOptix.OPCUAServer;
 #endregion
 
 class Location

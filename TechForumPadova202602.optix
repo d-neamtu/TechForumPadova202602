@@ -138,16 +138,24 @@ Project:
    Uri: 'urn:FTOptix:RecipeX:Net'
    Module: FTOptix.RecipeX.Net
    Version: 1.1
+  35:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 2.0
+  36:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 2.0
  Statistics:
-  TotalNodeCount: 6943
-  Objects: 1483
-  ObjectTypes: 70
-  Variables: 5366
+  TotalNodeCount: 7177
+  Objects: 1528
+  ObjectTypes: 71
+  Variables: 5552
   VariableTypes: 0
   DataTypes: 0
-  Methods: 24
+  Methods: 26
   References: 160
   ReferenceTypes: 0
-  Files: 47
+  Files: 48
  Nodes:
  - File: Nodes/TechForumPadova202602.yaml

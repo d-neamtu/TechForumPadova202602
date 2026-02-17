@@ -9,6 +9,7 @@ using FTOptix.Core;
 using FTOptix.HMIProject;
 using FTOptix.Recipe;
 using FTOptix.RecipeX;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class DataLoggerExporter : BaseNetLogic

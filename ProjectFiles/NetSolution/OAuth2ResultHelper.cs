@@ -11,6 +11,7 @@ using FTOptix.CoreBase;
 using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.RecipeX;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class OAuth2ResultHelper : BaseNetLogic

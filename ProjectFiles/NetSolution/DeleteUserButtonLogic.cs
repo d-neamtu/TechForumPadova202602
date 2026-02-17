@@ -5,6 +5,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.RecipeX;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class DeleteUserButtonLogic : BaseNetLogic

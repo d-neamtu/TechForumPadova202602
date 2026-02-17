@@ -7,6 +7,7 @@ using System;
 using FTOptix.UI;
 using FTOptix.HMIProject;
 using FilesystemBrowserHelper;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class FilesystemBrowserDatagridLogic : BaseNetLogic
