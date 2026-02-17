@@ -16,7 +16,7 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 600.0
-- Name: Pagina1
+- Name: SessionVars
   Id: g=119c896277a541c84fcfe0a3df3fee08
   Supertype: PaginaTemplate
   ReferenceType: HasComponent
@@ -162,7 +162,7 @@ Children:
       DataType: DateTimePickerInputFormatEnum
       ModellingRule: Optional
       Value: 3
-- Name: Pagina2
+- Name: ModelVars
   Id: g=2a12424199308db8e0ba79c433437841
   Supertype: PaginaTemplate
   ReferenceType: HasComponent
@@ -308,7 +308,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 290.0
-- Name: Pagina3
+- Name: PLCVars
   Id: g=1e944860a3f741b50bfdd3efb0ad5957
   Supertype: PaginaTemplate
   ReferenceType: HasComponent
