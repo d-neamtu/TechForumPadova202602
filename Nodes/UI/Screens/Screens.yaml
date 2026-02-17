@@ -1703,7 +1703,7 @@ Children:
         Value: 40.0
       - Name: FontSize
         Type: BaseDataVariableType
-        DataType: Float
+        DataType: Size
         ModellingRule: Optional
         Value: 25.0
       - Name: EventHandler1
@@ -1810,7 +1810,7 @@ Children:
         Value: 40.0
       - Name: FontSize
         Type: BaseDataVariableType
-        DataType: Float
+        DataType: Size
         ModellingRule: Optional
         Value: 25.0
       - Name: EventHandler1
@@ -6685,3 +6685,26 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 480.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Label1"}
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 764.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 442.0

@@ -676,6 +676,12 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../../../ConfirmPassword/Text"
+              - Name: OutputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: resultCode
+                  Type: BaseDataVariableType
+                  DataType: Int32
           - Name: EventArguments
             Type: MouseClickEvent
             Children:
